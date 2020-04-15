@@ -165,22 +165,8 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  justify-items: center;
 }
-
-/* .card {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 140px 190px;
-  grid-template-areas: "image" "text";
-
-  border-radius: 18px;
-  background-color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  transition: 0.5s ease;
-
-  max-width: 290px;
-} */
 
 .card {
   display: flex;
@@ -190,11 +176,16 @@ html {
   text-align: center;
   border-radius: 18px;
   background-color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
 
   transition: 0.5s ease;
 
-  max-width: 280px;
+  max-width: 90%;
+}
+
+.card img {
+  max-width: 140px;
+  padding: 1rem 0;
 }
 
 .card-text {
